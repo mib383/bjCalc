@@ -1,6 +1,6 @@
 #include "compiler.h"
 
-std::string Compiler::getVar2def()
+std::string Compiler::getVar2def() const
 {
     return var2def;
 }
@@ -210,19 +210,19 @@ bool Compiler::operator()(if_expression x)
 
 
     current->push_back(vasm::jump_if);
-    current->push_back(0);// we shall fill this (0) in later
-    std::size_t skip = current->size()-1;        // mark its position
+    current->push_back(0);
+    std::size_t skip = current->size()-1;
 
     operand thn = (*(x.then_else_))[0];
 
     if (!(*this)(thn))
         return false;
-    (*current)[skip] = current->size()-skip;        // now we know where to jump to (after the if branch)
+    (*current)[skip] = current->size()-skip;
 
-    (*current)[skip] = boost::get<double>((*current)[skip]) + 2;                     // adjust for the "else" jump
+    (*current)[skip] = boost::get<double>((*current)[skip]) + 2;
     current->push_back(vasm::jump);
-    current->push_back(0);// we shall fill this (0) in later
-    std::size_t exit = current->size()-1;    // mark its position
+    current->push_back(0);
+    std::size_t exit = current->size()-1;
 
     operand els = (*(x.then_else_))[1];
 

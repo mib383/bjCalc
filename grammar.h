@@ -35,9 +35,8 @@ struct Parser : qi::grammar<std::string::const_iterator, operand(), ascii::space
     qi::rule<std::string::const_iterator, unary_post(), ascii::space_type> post_unary_expr;
     qi::rule<std::string::const_iterator, operand(), ascii::space_type> pre_unary_expr, simple, start;
 
-    qi::rule<std::string::const_iterator, std::string(), ascii::space_type> identifier;
+    qi::rule<std::string::const_iterator, std::string(), ascii::space_type> identifier, core_const, last_var;
     qi::rule<std::string::const_iterator, variable_call(), ascii::space_type> var_call;
-
     qi::rule<std::string::const_iterator, variable_def(), ascii::space_type> var_def;
     qi::rule<std::string::const_iterator, if_expression(), ascii::space_type> if_expr;
     qi::rule<std::string::const_iterator, function_def(), ascii::space_type> fun_def;
@@ -48,7 +47,7 @@ struct Parser : qi::grammar<std::string::const_iterator, operand(), ascii::space
     qi::symbols<char, vasm::cmd> op_add, op_mul, op_pwr, op_un_pre, op_un_post, logical_op, equality_op, relational_op, core_func1;
     qi::real_parser<double, qi::ureal_policies<double> > udouble_;
 
-    Parser(std::ostream& outs) : Parser::base_type(start), _outstream(outs)
+    explicit Parser(std::ostream& outs) : Parser::base_type(start), _outstream(outs)
     {
 
         logical_op.add("&&", vasm::AND)("||", vasm::OR);
@@ -84,13 +83,14 @@ struct Parser : qi::grammar<std::string::const_iterator, operand(), ascii::space
         simple = suffix | udouble_ |  core_fun_call | fun_call | var_call | ('(' > if_expr > ')');
 
         var_def = identifier >> '=' >> if_expr;
-        var_call = identifier | ascii::string("#");
-
+        var_call = identifier | core_const | last_var;
+        last_var = ascii::string("#");
         fun_def = identifier  >> '(' >> -(identifier % ',') >> ')' >> '=' >> if_expr;
         fun_call = identifier >> '(' >> -(if_expr % ',') >> ')';
 
         core_fun_call = core_func1 >> '(' >> if_expr >> ')';
         identifier = qi::raw[qi::lexeme[(qi::alpha | '_') >> *(qi::alnum | '_')]];
+        core_const = qi::raw[ascii::string("#") >> identifier];
 
         suffix = qi::lexeme[udouble_ >> qi::alpha];
 
@@ -106,6 +106,8 @@ struct Parser : qi::grammar<std::string::const_iterator, operand(), ascii::space
         post_unary_expr.name("un_post");
         simple.name("simple");
         identifier.name("ident");
+        core_const.name("const");
+        last_var.name("last_var");
         var_call.name("var_call");
         var_def.name("var_def");
         fun_call.name("fun_call");
@@ -131,8 +133,8 @@ struct Parser : qi::grammar<std::string::const_iterator, operand(), ascii::space
         qi::debug(fun_call);
         qi::debug(fun_def);
         qi::debug(core_fun_call);
-        qi::debug(suffix);*/
-
+        qi::debug(suffix);
+        qi::debug(core_const);*/
 
         qi::on_error<qi::fail>
                     (

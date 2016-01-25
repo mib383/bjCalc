@@ -46,11 +46,13 @@ OBJECTS_DIR   = debug
 SOURCES       = ..\main.cpp \
 		..\vm.cpp \
 		..\vasm.cpp \
-		..\compiler.cpp 
+		..\compiler.cpp \
+		..\calculator.cpp 
 OBJECTS       = debug/main.o \
 		debug/vm.o \
 		debug/vasm.o \
-		debug/compiler.o
+		debug/compiler.o \
+		debug/calculator.o
 
 DIST          = 
 QMAKE_TARGET  = calcConsole
@@ -91,7 +93,7 @@ dist:
 	$(ZIP) calcConsole.zip $(SOURCES) $(DIST) ..\..\calcConsole.pro C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\spec_pre.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\qdevice.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\device_config.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\common\shell-win32.conf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\qconfig.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axbase.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axbase_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_axbase.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axcontainer.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axcontainer_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_axcontainer.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axserver.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_axserver_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_axserver.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_bluetooth.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_bluetooth_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_bluetooth.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_bootstrap_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_bootstrap_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_clucene_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_clucene_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_concurrent.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_concurrent_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_concurrent.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_core.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_core_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_core.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_declarative.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_declarative_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_declarative.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_designer.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_designer_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_designer.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_designercomponents_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_designercomponents_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_gui.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_gui_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_gui.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_help.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_help_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_help.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_multimedia.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_multimedia_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_multimedia.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_multimediawidgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_multimediawidgets_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_multimediawidgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_network.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_network_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_network.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_nfc.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_nfc_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_nfc.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_opengl.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_opengl_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_opengl.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_openglextensions.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_openglextensions_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_openglextensions.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_platformsupport_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_platformsupport_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_positioning.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_positioning_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_positioning.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_printsupport.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_printsupport_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_printsupport.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qml.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qml_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_qml.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qmldevtools_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_qmldevtools_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qmltest.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qmltest_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_qmltest.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_qtmultimediaquicktools_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_quick.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_quick_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_quick.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_quickparticles_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_quickparticles_private.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_quickwidgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_quickwidgets_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_quickwidgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_script.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_script_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_script.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_scripttools.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_scripttools_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_scripttools.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_sensors.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_sensors_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_sensors.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_serialport.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_serialport_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_serialport.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_sql.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_sql_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_sql.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_svg.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_svg_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_svg.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_testlib.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_testlib_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_testlib.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_uitools.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_uitools_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_uitools.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_websockets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_websockets_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_websockets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_widgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_widgets_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_widgets.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_winextras.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_winextras_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_winextras.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_xml.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_xml_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_xml.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_xmlpatterns.pri c:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules-inst\qt_lib_xmlpatterns_private.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_lib_xmlpatterns.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_dsengine.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qdds.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qdeclarativeview.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qgenericbearer.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qicns.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qico.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qjp2.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qminimal.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qmldbg_inspector.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qmldbg_qtquick2.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qmldbg_tcp.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qmldbg_tcp_qtdeclarative.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qmng.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qnativewifibearer.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qoffscreen.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qsvg.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qsvgicon.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtaccessiblequick.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtaccessiblewidgets.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtaudio_windows.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtga.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtiff.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtmedia_audioengine.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtmultimedia_m3u.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtposition_positionpoll.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtsensorgestures_plugin.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtsensorgestures_shakeplugin.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtsensors_dummy.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qtsensors_generic.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qwbmp.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qwebp.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_qwindows.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_plugin_windowsprintersupport.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_dumpcpp.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_dumpdoc.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_lconvert.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_lrelease.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_lupdate.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qcollectiongenerator.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qdoc.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qhelpgenerator.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qlalr.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qml.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qml1plugindump.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlbundle.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlimportscanner.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlmin.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlplugindump.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlprofiler.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmlscene.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_qmltestrunner.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_syncqt.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_uic.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_xmlpatterns.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\modules\qt_tool_xmlpatternsvalidator.pri C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\qt_functions.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\qt_config.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\win32\qt_config.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\win32-g++\qmake.conf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\spec_post.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\exclusive_builds.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\default_pre.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\win32\default_pre.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\resolve_config.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\exclusive_builds_post.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\default_post.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\build_pass.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\c++11.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\win32\console.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\win32\rtti.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\precompile_header.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\warn_on.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\testcase_targets.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\exceptions.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\yacc.prf C:\Qt5.3\5.3\StaticQt\qtbase\mkspecs\features\lex.prf ..\calcConsole.pro  NO_PCH_SOURCES YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) debug\main.o debug\vm.o debug\vasm.o debug\compiler.o
+	-$(DEL_FILE) debug\main.o debug\vm.o debug\vasm.o debug\compiler.o debug\calculator.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -114,13 +116,11 @@ compiler_clean:
 ####### Compile
 
 debug/main.o: ../main.cpp ../calculator.h \
-		../../../../../include/boost-1_59/boost/spirit/include/support_utree.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/utree_traits_fwd.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/utree.hpp \
-		../../../../../include/boost-1_59/boost/io/ios_state.hpp \
-		../../../../../include/boost-1_59/boost/io_fwd.hpp \
-		../../../../../include/boost-1_59/boost/detail/workaround.hpp \
+		../grammar.h \
+		../../../../../include/boost-1_59/boost/config/warning_disable.hpp \
+		../../../../../include/boost-1_59/boost/variant/recursive_variant.hpp \
+		../../../../../include/boost-1_59/boost/variant/variant_fwd.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/config.hpp \
 		../../../../../include/boost-1_59/boost/config.hpp \
 		../../../../../include/boost-1_59/boost/config/user.hpp \
 		../../../../../include/boost-1_59/boost/config/select_compiler_config.hpp \
@@ -178,48 +178,38 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/config/platform/cray.hpp \
 		../../../../../include/boost-1_59/boost/config/platform/vms.hpp \
 		../../../../../include/boost-1_59/boost/config/suffix.hpp \
-		../../../../../include/boost-1_59/boost/integer.hpp \
-		../../../../../include/boost-1_59/boost/integer_fwd.hpp \
-		../../../../../include/boost-1_59/boost/limits.hpp \
-		../../../../../include/boost-1_59/boost/cstdint.hpp \
-		../../../../../include/boost-1_59/boost/integer_traits.hpp \
-		../../../../../include/boost-1_59/boost/static_assert.hpp \
-		../../../../../include/boost-1_59/boost/throw_exception.hpp \
-		../../../../../include/boost-1_59/boost/exception/exception.hpp \
-		../../../../../include/boost-1_59/boost/current_function.hpp \
-		../../../../../include/boost-1_59/boost/assert.hpp \
-		../../../../../include/boost-1_59/boost/noncopyable.hpp \
-		../../../../../include/boost-1_59/boost/core/noncopyable.hpp \
-		../../../../../include/boost-1_59/boost/iterator/iterator_facade.hpp \
-		../../../../../include/boost-1_59/boost/iterator.hpp \
-		../../../../../include/boost-1_59/boost/iterator/interoperable.hpp \
-		../../../../../include/boost-1_59/boost/mpl/bool.hpp \
-		../../../../../include/boost-1_59/boost/mpl/bool_fwd.hpp \
+		../../../../../include/boost-1_59/boost/detail/workaround.hpp \
+		../../../../../include/boost-1_59/boost/blank_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/arg.hpp \
+		../../../../../include/boost-1_59/boost/mpl/arg_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/adl_barrier.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/adl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/msvc.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/intel.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/gcc.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/workaround.hpp \
-		../../../../../include/boost-1_59/boost/mpl/integral_c_tag.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/static_constant.hpp \
-		../../../../../include/boost-1_59/boost/mpl/or.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/use_preprocessed.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/nested_type_wknd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/na_spec.hpp \
-		../../../../../include/boost-1_59/boost/mpl/lambda_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/void_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/na.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/na_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/ctps.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/lambda.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/ttp.hpp \
-		../../../../../include/boost-1_59/boost/mpl/int.hpp \
-		../../../../../include/boost-1_59/boost/mpl/int_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/nttp_decl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/nttp.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/cat.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/config/config.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/na.hpp \
+		../../../../../include/boost-1_59/boost/mpl/bool.hpp \
+		../../../../../include/boost-1_59/boost/mpl/bool_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/integral_c_tag.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/static_constant.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/na_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/ctps.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/na_assert.hpp \
+		../../../../../include/boost-1_59/boost/mpl/assert.hpp \
+		../../../../../include/boost-1_59/boost/mpl/not.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/nested_type_wknd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/na_spec.hpp \
+		../../../../../include/boost-1_59/boost/mpl/lambda_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/void_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/lambda.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/ttp.hpp \
+		../../../../../include/boost-1_59/boost/mpl/int.hpp \
+		../../../../../include/boost-1_59/boost/mpl/int_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/integral_wrapper.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/static_cast.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/lambda_arity_param.hpp \
@@ -302,15 +292,43 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/preprocessor/repetition/detail/msvc/for.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/repetition/detail/dmc/for.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/repetition/detail/for.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/value_wknd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/integral.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/gpu.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/pp_counter.hpp \
+		../../../../../include/boost-1_59/boost/mpl/if.hpp \
+		../../../../../include/boost-1_59/boost/static_assert.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/arity_spec.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/arg_typedef.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/use_preprocessed.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/include_preprocessed.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/compiler.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/stringize.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/logical_op.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/ext_params.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/dec.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_convertible.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/intrinsics.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/default_params.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/iterate.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/iteration/iterate.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/array/elem.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/array/data.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/array/size.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/slot/slot.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/slot/detail/def.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/enum.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/enum_params.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_params.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/enum_shifted_params.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_shifted_params.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/substitute_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/template_arity.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/type_wrapper.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/has_rebind.hpp \
+		../../../../../include/boost-1_59/boost/mpl/has_xxx.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/has_xxx.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/msvc_typename.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing_params.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_class.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/config.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/intrinsics.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_same.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/bool_trait_def.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/template_arity_spec.hpp \
@@ -330,15 +348,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/type_traits/detail/ice_eq.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/false_result.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/is_function_ptr_helper.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/iterate.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/iteration/iterate.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/array/elem.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/array/data.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/array/size.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/slot/slot.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/slot/detail/def.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/enum_params.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_params.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/is_function_ptr_tester.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_volatile.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/cv_traits_impl.hpp \
@@ -346,75 +355,53 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/type_traits/detail/type_trait_def.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/detail/type_trait_undef.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_void.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_array.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_arithmetic.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_integral.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_float.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_abstract.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_class.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_union.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/remove_cv.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_scalar.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_arithmetic.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_integral.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_float.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_enum.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/add_reference.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_pointer.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_member_pointer.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_member_function_pointer.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/detail/is_mem_fun_pointer_tester.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_convertible.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_array.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_abstract.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_polymorphic.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/add_lvalue_reference.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/add_rvalue_reference.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/remove_reference.hpp \
 		../../../../../include/boost-1_59/boost/utility/declval.hpp \
-		../../../../../include/boost-1_59/boost/iterator/detail/config_def.hpp \
-		../../../../../include/boost-1_59/boost/iterator/detail/config_undef.hpp \
-		../../../../../include/boost-1_59/boost/iterator/iterator_traits.hpp \
-		../../../../../include/boost-1_59/boost/detail/iterator.hpp \
-		../../../../../include/boost-1_59/boost/iterator/iterator_categories.hpp \
-		../../../../../include/boost-1_59/boost/mpl/eval_if.hpp \
-		../../../../../include/boost-1_59/boost/mpl/if.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/value_wknd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/integral.hpp \
-		../../../../../include/boost-1_59/boost/mpl/identity.hpp \
-		../../../../../include/boost-1_59/boost/mpl/placeholders.hpp \
-		../../../../../include/boost-1_59/boost/mpl/arg.hpp \
-		../../../../../include/boost-1_59/boost/mpl/arg_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/na_assert.hpp \
-		../../../../../include/boost-1_59/boost/mpl/assert.hpp \
-		../../../../../include/boost-1_59/boost/mpl/not.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/gpu.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/pp_counter.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/arity_spec.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/arg_typedef.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/default_params.hpp \
-		../../../../../include/boost-1_59/boost/iterator/detail/facade_iterator_category.hpp \
-		../../../../../include/boost-1_59/boost/mpl/and.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_const.hpp \
-		../../../../../include/boost-1_59/boost/detail/indirect_traits.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/remove_pointer.hpp \
-		../../../../../include/boost-1_59/boost/iterator/detail/enable_if.hpp \
-		../../../../../include/boost-1_59/boost/utility/addressof.hpp \
-		../../../../../include/boost-1_59/boost/core/addressof.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/add_const.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/add_pointer.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/remove_const.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_pod.hpp \
-		../../../../../include/boost-1_59/boost/mpl/always.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_pointer.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_member_pointer.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_member_function_pointer.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/detail/is_mem_fun_pointer_tester.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_is_class.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/range.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/subseq.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/first_n.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/detail/split.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/rest_n.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/comparison/not_equal.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/detail/is_empty.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/size.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/repeat.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/fold_left.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/seq.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/elem.hpp \
+		../../../../../include/boost-1_59/boost/mpl/limits/list.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/enable_recursive.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/enable_recursive_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/apply.hpp \
 		../../../../../include/boost-1_59/boost/mpl/apply_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/apply_wrap.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/has_apply.hpp \
-		../../../../../include/boost-1_59/boost/mpl/has_xxx.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/type_wrapper.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/has_xxx.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/msvc_typename.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing_params.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/has_apply.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_never_true.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/add.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/config/bcc.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_dtw.hpp \
+		../../../../../include/boost-1_59/boost/mpl/placeholders.hpp \
 		../../../../../include/boost-1_59/boost/mpl/lambda.hpp \
 		../../../../../include/boost-1_59/boost/mpl/bind.hpp \
 		../../../../../include/boost-1_59/boost/mpl/bind_fwd.hpp \
@@ -425,137 +412,62 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/mpl/aux_/common_name_wknd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/protect.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/partial_spec_params.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/repeat.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/ext_params.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/count_args.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/expr_if.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/control/expr_if.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/enum_shifted_params.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_shifted_params.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/full_lambda.hpp \
 		../../../../../include/boost-1_59/boost/mpl/quote.hpp \
 		../../../../../include/boost-1_59/boost/mpl/void.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/has_type.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/template_arity.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/has_rebind.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_is_class.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/preprocessor/range.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/subseq.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/first_n.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/detail/split.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/rest_n.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/comparison/not_equal.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/detail/is_empty.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/size.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/fold_left.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/seq.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/elem.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/lambda_no_ctps.hpp \
 		../../../../../include/boost-1_59/boost/mpl/is_placeholder.hpp \
-		../../../../../include/boost-1_59/boost/range/iterator_range.hpp \
-		../../../../../include/boost-1_59/boost/range/iterator_range_core.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_base_and_derived.hpp \
-		../../../../../include/boost-1_59/boost/range/functions.hpp \
-		../../../../../include/boost-1_59/boost/range/begin.hpp \
-		../../../../../include/boost-1_59/boost/range/config.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/begin.hpp \
-		../../../../../include/boost-1_59/boost/range/iterator.hpp \
-		../../../../../include/boost-1_59/boost/range/range_fwd.hpp \
-		../../../../../include/boost-1_59/boost/range/mutable_iterator.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/extract_optional_type.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/msvc_has_iterator_workaround.hpp \
-		../../../../../include/boost-1_59/boost/range/const_iterator.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/common.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/sfinae.hpp \
-		../../../../../include/boost-1_59/boost/range/end.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/end.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/implementation_help.hpp \
-		../../../../../include/boost-1_59/boost/range/size.hpp \
-		../../../../../include/boost-1_59/boost/range/size_type.hpp \
-		../../../../../include/boost-1_59/boost/range/difference_type.hpp \
-		../../../../../include/boost-1_59/boost/range/has_range_iterator.hpp \
-		../../../../../include/boost-1_59/boost/utility/enable_if.hpp \
-		../../../../../include/boost-1_59/boost/core/enable_if.hpp \
-		../../../../../include/boost-1_59/boost/range/concepts.hpp \
-		../../../../../include/boost-1_59/boost/concept_check.hpp \
-		../../../../../include/boost-1_59/boost/concept/assert.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/msvc.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/backward_compatibility.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/has_constraints.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/borland.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/general.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/conversion_traits.hpp \
-		../../../../../include/boost-1_59/boost/concept/usage.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/concept_def.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/for_each_i.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/enum.hpp \
-		../../../../../include/boost-1_59/boost/concept/detail/concept_undef.hpp \
-		../../../../../include/boost-1_59/boost/iterator/iterator_concepts.hpp \
-		../../../../../include/boost-1_59/boost/range/value_type.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/misc_concept.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/make_unsigned.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_signed.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_unsigned.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/add_volatile.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/has_member_size.hpp \
-		../../../../../include/boost-1_59/boost/utility.hpp \
-		../../../../../include/boost-1_59/boost/utility/base_from_member.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_binary_params.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/repeat_from_to.hpp \
-		../../../../../include/boost-1_59/boost/utility/binary.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/control/deduce_d.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/cat.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/transform.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/arithmetic/mod.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/arithmetic/detail/div_base.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/comparison/less_equal.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/logical/not.hpp \
-		../../../../../include/boost-1_59/boost/utility/identity_type.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/function_traits.hpp \
+		../../../../../include/boost-1_59/boost/mpl/identity.hpp \
+		../../../../../include/boost-1_59/boost/mpl/eval_if.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/substitute.hpp \
+		../../../../../include/boost-1_59/boost/mpl/or.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/logical_op.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/dec.hpp \
+		../../../../../include/boost-1_59/boost/variant/recursive_wrapper.hpp \
+		../../../../../include/boost-1_59/boost/variant/recursive_wrapper_fwd.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/move.hpp \
+		../../../../../include/boost-1_59/boost/move/move.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/config_begin.hpp \
+		../../../../../include/boost-1_59/boost/move/utility.hpp \
+		../../../../../include/boost-1_59/boost/move/utility_core.hpp \
+		../../../../../include/boost-1_59/boost/move/core.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/workaround.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/type_traits.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/meta_utils.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/meta_utils_core.hpp \
+		../../../../../include/boost-1_59/boost/assert.hpp \
+		../../../../../include/boost-1_59/boost/current_function.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/config_end.hpp \
+		../../../../../include/boost-1_59/boost/move/traits.hpp \
+		../../../../../include/boost-1_59/boost/move/iterator.hpp \
+		../../../../../include/boost-1_59/boost/move/detail/iterator_traits.hpp \
+		../../../../../include/boost-1_59/boost/move/algorithm.hpp \
+		../../../../../include/boost-1_59/boost/detail/no_exceptions_support.hpp \
+		../../../../../include/boost-1_59/boost/core/no_exceptions_support.hpp \
+		../../../../../include/boost-1_59/boost/move/adl_move_swap.hpp \
 		../../../../../include/boost-1_59/boost/checked_delete.hpp \
 		../../../../../include/boost-1_59/boost/core/checked_delete.hpp \
-		../../../../../include/boost-1_59/boost/next_prior.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/integral_promotion.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/make_signed.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_plus.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/detail/has_binary_operator.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_base_of.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_fundamental.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_plus_assign.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_minus.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_minus_assign.hpp \
-		../../../../../include/boost-1_59/boost/range/distance.hpp \
-		../../../../../include/boost-1_59/boost/range/empty.hpp \
-		../../../../../include/boost-1_59/boost/range/rbegin.hpp \
-		../../../../../include/boost-1_59/boost/range/reverse_iterator.hpp \
-		../../../../../include/boost-1_59/boost/iterator/reverse_iterator.hpp \
-		../../../../../include/boost-1_59/boost/iterator/iterator_adaptor.hpp \
-		../../../../../include/boost-1_59/boost/range/rend.hpp \
-		../../../../../include/boost-1_59/boost/range/algorithm/equal.hpp \
-		../../../../../include/boost-1_59/boost/range/detail/safe_bool.hpp \
-		../../../../../include/boost-1_59/boost/range/iterator_range_io.hpp \
-		../../../../../include/boost-1_59/boost/utility/result_of.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/make_variant_list.hpp \
+		../../../../../include/boost-1_59/boost/mpl/list.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/sequence_wrapper.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/enum_params_with_a_default.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_params_with_a_default.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/facilities/intercept.hpp \
-		../../../../../include/boost-1_59/boost/ref.hpp \
-		../../../../../include/boost-1_59/boost/core/ref.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/detail/utree_detail1.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/alignment_of.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/detail/size_t_trait_def.hpp \
-		../../../../../include/boost-1_59/boost/mpl/size_t.hpp \
-		../../../../../include/boost-1_59/boost/mpl/size_t_fwd.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/detail/size_t_trait_undef.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/operators.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/detail/utree_detail2.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/utree/utree_traits.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/attributes.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/unused.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/has_semantic_action.hpp \
-		../../../../../include/boost-1_59/boost/mpl/find_if.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/find_if_pred.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_binary_params.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/over_sequence.hpp \
+		../../../../../include/boost-1_59/boost/mpl/equal.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/iter_fold_if_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/limits/unrolling.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/iter_apply.hpp \
 		../../../../../include/boost-1_59/boost/mpl/deref.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_type.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/is_msvc_eti_arg.hpp \
-		../../../../../include/boost-1_59/boost/mpl/iter_fold_if.hpp \
+		../../../../../include/boost-1_59/boost/mpl/and.hpp \
 		../../../../../include/boost-1_59/boost/mpl/begin_end.hpp \
 		../../../../../include/boost-1_59/boost/mpl/begin_end_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/begin_end_impl.hpp \
@@ -564,119 +476,99 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/mpl/aux_/traits_lambda_spec.hpp \
 		../../../../../include/boost-1_59/boost/mpl/sequence_tag.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/has_tag.hpp \
-		../../../../../include/boost-1_59/boost/mpl/logical.hpp \
-		../../../../../include/boost-1_59/boost/mpl/pair.hpp \
+		../../../../../include/boost-1_59/boost/mpl/always.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/msvc_eti_base.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/iter_fold_if_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/limits/unrolling.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/config/forwarding.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/attributes_fwd.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/container.hpp \
-		../../../../../include/boost-1_59/boost/optional.hpp \
-		../../../../../include/boost-1_59/boost/optional/optional.hpp \
-		../../../../../include/boost-1_59/boost/core/explicit_operator_bool.hpp \
-		../../../../../include/boost-1_59/boost/core/swap.hpp \
-		../../../../../include/boost-1_59/boost/optional/bad_optional_access.hpp \
-		../../../../../include/boost-1_59/boost/type.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_constructor.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_trivial_constructor.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/type_with_alignment.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/list/transform.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/list/append.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/decay.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_nothrow_move_assignable.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_trivial_move_assign.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_assign.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_trivial_assign.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_nothrow_move_constructible.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_trivial_move_constructor.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_copy.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/has_trivial_copy.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/is_copy_constructible.hpp \
-		../../../../../include/boost-1_59/boost/detail/reference_content.hpp \
-		../../../../../include/boost-1_59/boost/move/utility.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/config_begin.hpp \
-		../../../../../include/boost-1_59/boost/move/utility_core.hpp \
-		../../../../../include/boost-1_59/boost/move/core.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/workaround.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/type_traits.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/meta_utils.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/meta_utils_core.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/config_end.hpp \
-		../../../../../include/boost-1_59/boost/move/traits.hpp \
-		../../../../../include/boost-1_59/boost/none.hpp \
-		../../../../../include/boost-1_59/boost/none_t.hpp \
-		../../../../../include/boost-1_59/boost/utility/compare_pointees.hpp \
-		../../../../../include/boost-1_59/boost/optional/optional_fwd.hpp \
-		../../../../../include/boost-1_59/boost/variant.hpp \
-		../../../../../include/boost-1_59/boost/variant/variant.hpp \
-		../../../../../include/boost-1_59/boost/type_index.hpp \
-		../../../../../include/boost-1_59/boost/type_index/stl_type_index.hpp \
-		../../../../../include/boost-1_59/boost/type_index/type_index_facade.hpp \
-		../../../../../include/boost-1_59/boost/core/demangle.hpp \
-		../../../../../include/boost-1_59/boost/type_index/detail/stl_register_class.hpp \
-		../../../../../include/boost-1_59/boost/type_index/ctti_type_index.hpp \
-		../../../../../include/boost-1_59/boost/type_index/detail/compile_time_type_info.hpp \
-		../../../../../include/boost-1_59/boost/type_index/detail/ctti_register_class.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/config.hpp \
-		../../../../../include/boost-1_59/boost/variant/variant_fwd.hpp \
-		../../../../../include/boost-1_59/boost/blank_fwd.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/enum.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/substitute_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/limits/list.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/backup_holder.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/enable_recursive_fwd.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/forced_return.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/generic_result_type.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/initializer.hpp \
-		../../../../../include/boost-1_59/boost/call_traits.hpp \
-		../../../../../include/boost-1_59/boost/detail/call_traits.hpp \
-		../../../../../include/boost-1_59/boost/variant/recursive_wrapper_fwd.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/move.hpp \
-		../../../../../include/boost-1_59/boost/move/move.hpp \
-		../../../../../include/boost-1_59/boost/move/iterator.hpp \
-		../../../../../include/boost-1_59/boost/move/detail/iterator_traits.hpp \
-		../../../../../include/boost-1_59/boost/move/algorithm.hpp \
-		../../../../../include/boost-1_59/boost/detail/no_exceptions_support.hpp \
-		../../../../../include/boost-1_59/boost/core/no_exceptions_support.hpp \
-		../../../../../include/boost-1_59/boost/move/adl_move_swap.hpp \
-		../../../../../include/boost-1_59/boost/mpl/iter_fold.hpp \
+		../../../../../include/boost-1_59/boost/mpl/transform.hpp \
+		../../../../../include/boost-1_59/boost/mpl/fold.hpp \
 		../../../../../include/boost-1_59/boost/mpl/O1_size.hpp \
 		../../../../../include/boost-1_59/boost/mpl/O1_size_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/O1_size_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/long.hpp \
 		../../../../../include/boost-1_59/boost/mpl/long_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/has_size.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/iter_fold_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/config/forwarding.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/fold_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/fold_impl_body.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/make_variant_list.hpp \
-		../../../../../include/boost-1_59/boost/mpl/list.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/sequence_wrapper.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/enum_params_with_a_default.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_params_with_a_default.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/over_sequence.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/visitation_impl.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/cast_storage.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/hash_variant.hpp \
-		../../../../../include/boost-1_59/boost/variant/static_visitor.hpp \
-		../../../../../include/boost-1_59/boost/variant/apply_visitor.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/apply_visitor_unary.hpp \
-		../../../../../include/boost-1_59/boost/mpl/distance.hpp \
-		../../../../../include/boost-1_59/boost/mpl/distance_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/iterator_range.hpp \
-		../../../../../include/boost-1_59/boost/mpl/tag.hpp \
+		../../../../../include/boost-1_59/boost/mpl/reverse_fold.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/reverse_fold_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/reverse_fold_impl_body.hpp \
+		../../../../../include/boost-1_59/boost/mpl/pair_view.hpp \
+		../../../../../include/boost-1_59/boost/mpl/iterator_category.hpp \
 		../../../../../include/boost-1_59/boost/mpl/advance.hpp \
 		../../../../../include/boost-1_59/boost/mpl/advance_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/less.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/comparison_op.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/numeric_op.hpp \
 		../../../../../include/boost-1_59/boost/mpl/numeric_cast.hpp \
+		../../../../../include/boost-1_59/boost/mpl/tag.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/numeric_cast_utils.hpp \
 		../../../../../include/boost-1_59/boost/mpl/negate.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/advance_forward.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/advance_backward.hpp \
 		../../../../../include/boost-1_59/boost/mpl/prior.hpp \
+		../../../../../include/boost-1_59/boost/mpl/distance.hpp \
+		../../../../../include/boost-1_59/boost/mpl/distance_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/iter_fold.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/iter_fold_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/iterator_range.hpp \
+		../../../../../include/boost-1_59/boost/mpl/min_max.hpp \
+		../../../../../include/boost-1_59/boost/mpl/pair.hpp \
+		../../../../../include/boost-1_59/boost/mpl/iterator_tags.hpp \
+		../../../../../include/boost-1_59/boost/mpl/is_sequence.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/inserter_algorithm.hpp \
+		../../../../../include/boost-1_59/boost/mpl/back_inserter.hpp \
+		../../../../../include/boost-1_59/boost/mpl/push_back.hpp \
+		../../../../../include/boost-1_59/boost/mpl/push_back_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/push_back_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/inserter.hpp \
+		../../../../../include/boost-1_59/boost/mpl/front_inserter.hpp \
+		../../../../../include/boost-1_59/boost/mpl/push_front.hpp \
+		../../../../../include/boost-1_59/boost/mpl/push_front_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/push_front_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/clear.hpp \
+		../../../../../include/boost-1_59/boost/mpl/clear_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/clear_impl.hpp \
+		../../../../../include/boost-1_59/boost/variant/variant.hpp \
+		../../../../../include/boost-1_59/boost/type_index.hpp \
+		../../../../../include/boost-1_59/boost/type_index/stl_type_index.hpp \
+		../../../../../include/boost-1_59/boost/type_index/type_index_facade.hpp \
+		../../../../../include/boost-1_59/boost/throw_exception.hpp \
+		../../../../../include/boost-1_59/boost/exception/exception.hpp \
+		../../../../../include/boost-1_59/boost/core/demangle.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_const.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_signed.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/make_signed.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_unsigned.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/add_const.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/add_volatile.hpp \
+		../../../../../include/boost-1_59/boost/type_index/detail/stl_register_class.hpp \
+		../../../../../include/boost-1_59/boost/type_index/ctti_type_index.hpp \
+		../../../../../include/boost-1_59/boost/type_index/detail/compile_time_type_info.hpp \
+		../../../../../include/boost-1_59/boost/type_index/detail/ctti_register_class.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/backup_holder.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/forced_return.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/generic_result_type.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/initializer.hpp \
+		../../../../../include/boost-1_59/boost/call_traits.hpp \
+		../../../../../include/boost-1_59/boost/detail/call_traits.hpp \
+		../../../../../include/boost-1_59/boost/detail/reference_content.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_copy.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_trivial_copy.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_pod.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_copy_constructible.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_base_and_derived.hpp \
+		../../../../../include/boost-1_59/boost/noncopyable.hpp \
+		../../../../../include/boost-1_59/boost/core/noncopyable.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/visitation_impl.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/cast_storage.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_nothrow_move_constructible.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_trivial_move_constructor.hpp \
+		../../../../../include/boost-1_59/boost/utility/enable_if.hpp \
+		../../../../../include/boost-1_59/boost/core/enable_if.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/hash_variant.hpp \
+		../../../../../include/boost-1_59/boost/variant/static_visitor.hpp \
+		../../../../../include/boost-1_59/boost/variant/apply_visitor.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/apply_visitor_unary.hpp \
 		../../../../../include/boost-1_59/boost/mpl/size.hpp \
 		../../../../../include/boost-1_59/boost/mpl/size_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/size_impl.hpp \
@@ -686,99 +578,150 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/functional/hash_fwd.hpp \
 		../../../../../include/boost-1_59/boost/functional/hash/hash_fwd.hpp \
 		../../../../../include/boost-1_59/boost/aligned_storage.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/alignment_of.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/detail/size_t_trait_def.hpp \
+		../../../../../include/boost-1_59/boost/mpl/size_t.hpp \
+		../../../../../include/boost-1_59/boost/mpl/size_t_fwd.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/detail/size_t_trait_undef.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/type_with_alignment.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/list/transform.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/list/append.hpp \
 		../../../../../include/boost-1_59/boost/blank.hpp \
 		../../../../../include/boost-1_59/boost/detail/templated_streams.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_empty.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/is_stateless.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_trivial_constructor.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/has_trivial_destructor.hpp \
 		../../../../../include/boost-1_59/boost/math/common_factor_ct.hpp \
 		../../../../../include/boost-1_59/boost/math_fwd.hpp \
+		../../../../../include/boost-1_59/boost/cstdint.hpp \
+		../../../../../include/boost-1_59/boost/limits.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_constructor.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_nothrow_move_assignable.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_trivial_move_assign.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_nothrow_assign.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_trivial_assign.hpp \
 		../../../../../include/boost-1_59/boost/mpl/empty.hpp \
 		../../../../../include/boost-1_59/boost/mpl/empty_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/empty_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/fold.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/fold_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/find_if.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/find_if_pred.hpp \
+		../../../../../include/boost-1_59/boost/mpl/iter_fold_if.hpp \
+		../../../../../include/boost-1_59/boost/mpl/logical.hpp \
 		../../../../../include/boost-1_59/boost/mpl/front.hpp \
 		../../../../../include/boost-1_59/boost/mpl/front_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/front_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/is_sequence.hpp \
 		../../../../../include/boost-1_59/boost/mpl/max_element.hpp \
-		../../../../../include/boost-1_59/boost/mpl/push_front.hpp \
-		../../../../../include/boost-1_59/boost/mpl/push_front_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/push_front_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/same_as.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/lambda_spec.hpp \
 		../../../../../include/boost-1_59/boost/mpl/sizeof.hpp \
-		../../../../../include/boost-1_59/boost/mpl/transform.hpp \
-		../../../../../include/boost-1_59/boost/mpl/reverse_fold.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/reverse_fold_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/reverse_fold_impl_body.hpp \
-		../../../../../include/boost-1_59/boost/mpl/pair_view.hpp \
-		../../../../../include/boost-1_59/boost/mpl/iterator_category.hpp \
-		../../../../../include/boost-1_59/boost/mpl/min_max.hpp \
-		../../../../../include/boost-1_59/boost/mpl/iterator_tags.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/inserter_algorithm.hpp \
-		../../../../../include/boost-1_59/boost/mpl/back_inserter.hpp \
-		../../../../../include/boost-1_59/boost/mpl/push_back.hpp \
-		../../../../../include/boost-1_59/boost/mpl/push_back_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/push_back_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/inserter.hpp \
-		../../../../../include/boost-1_59/boost/mpl/front_inserter.hpp \
-		../../../../../include/boost-1_59/boost/mpl/clear.hpp \
-		../../../../../include/boost-1_59/boost/mpl/clear_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/clear_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/equal_to.hpp \
 		../../../../../include/boost-1_59/boost/variant/detail/variant_io.hpp \
-		../../../../../include/boost-1_59/boost/variant/recursive_variant.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/enable_recursive.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/substitute.hpp \
-		../../../../../include/boost-1_59/boost/variant/recursive_wrapper.hpp \
-		../../../../../include/boost-1_59/boost/mpl/equal.hpp \
-		../../../../../include/boost-1_59/boost/variant/get.hpp \
-		../../../../../include/boost-1_59/boost/variant/detail/element_index.hpp \
-		../../../../../include/boost-1_59/boost/variant/visitor_ptr.hpp \
-		../../../../../include/boost-1_59/boost/variant/bad_visit.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/detail/hold_any.hpp \
-		../../../../../include/boost-1_59/boost/detail/sp_typeinfo.hpp \
-		../../../../../include/boost-1_59/boost/core/typeinfo.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/detail/as_variant.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/size.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/adapt_struct.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/config.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/size.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/is_sequence.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/sequence_base.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/adapt_struct.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/comparison/less.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/comparison/less_equal.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/logical/not.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/comparison/equal.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/variadic/to_seq.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/tuple/to_seq.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/remove_const.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/extension.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/category_of.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/detail/category_of.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/tag_of.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/tag_of_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/is_mpl_sequence.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/is_segmented.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp \
-		../../../../../include/boost-1_59/boost/mpl/plus.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/sequence_base.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_base_of.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_base.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_auto.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_is_tpl.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/for_each.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/for_each_i.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/enum.hpp \
+		../../../../../include/boost-1_59/boost/typeof/typeof.hpp \
+		../../../../../include/boost-1_59/boost/typeof/dmc/typeof_impl.hpp \
+		../../../../../include/boost-1_59/boost/typeof/msvc/typeof_impl.hpp \
+		../../../../../include/boost-1_59/boost/typeof/unsupported.hpp \
+		../../../../../include/boost-1_59/boost/typeof/typeof_impl.hpp \
+		../../../../../include/boost-1_59/boost/typeof/encode_decode.hpp \
+		../../../../../include/boost-1_59/boost/typeof/vector.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/iteration/self.hpp \
+		../../../../../include/boost-1_59/boost/typeof/vector50.hpp \
+		../../../../../include/boost-1_59/boost/typeof/vector100.hpp \
+		../../../../../include/boost-1_59/boost/typeof/vector150.hpp \
+		../../../../../include/boost-1_59/boost/typeof/vector200.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repeat_from_to.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/repeat_from_to.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/iteration/local.hpp \
+		../../../../../include/boost-1_59/boost/typeof/type_encoding.hpp \
+		../../../../../include/boost-1_59/boost/typeof/template_encoding.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/detail/is_unary.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/transform.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/cat.hpp \
+		../../../../../include/boost-1_59/boost/typeof/int_encoding.hpp \
+		../../../../../include/boost-1_59/boost/typeof/type_template_param.hpp \
+		../../../../../include/boost-1_59/boost/typeof/integral_template_param.hpp \
+		../../../../../include/boost-1_59/boost/typeof/template_template_param.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/logical/or.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/logical/bitor.hpp \
+		../../../../../include/boost-1_59/boost/typeof/modifiers.hpp \
+		../../../../../include/boost-1_59/boost/typeof/pointers_data_members.hpp \
+		../../../../../include/boost-1_59/boost/typeof/encode_decode_params.hpp \
+		../../../../../include/boost-1_59/boost/typeof/register_functions.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/if.hpp \
+		../../../../../include/boost-1_59/boost/typeof/register_fundamental.hpp \
+		../../../../../include/boost-1_59/boost/typeof/native.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_base_attr_filler.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/preprocessor/is_seq.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/punctuation/paren.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/seq/push_front.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/is_view_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/is_sequence_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/value_at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/category_of_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/size_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/begin_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/basic_iterator.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/iterator_facade.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/iterator_base.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/detail/advance.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/next.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/prior.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/detail/distance.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/equal_to.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/is_iterator.hpp \
+		../../../../../include/boost-1_59/boost/mpl/minus.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/arithmetic_op.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/largest_int.hpp \
-		../../../../../include/boost-1_59/boost/fusion/mpl/begin.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/end_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/value_of_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/deref_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/io.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io/in.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/in.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/manip.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/begin.hpp \
 		../../../../../include/boost-1_59/boost/mpl/empty_base.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/is_sequence.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/is_segmented.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/detail/segmented_begin.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/detail/segmented_begin_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/cons_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/segmented_fold_until_impl.hpp \
+		../../../../../include/boost-1_59/boost/utility/result_of.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/void.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/equal_to.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/is_iterator.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/deref.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/iterator_base.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/next.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/segments.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/segmented_iterator.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/detail/segmented_iterator.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/iterator_facade.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/detail/advance.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/prior.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/detail/distance.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/category_of.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/detail/category_of.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/deref_data.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/key_of.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/value_of.hpp \
@@ -799,7 +742,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/cpp03/list_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/cpp03/limits.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/pp_round.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/comparison/less.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/cpp03/preprocessed/list_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/cpp03/preprocessed/list10_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/cpp03/preprocessed/list20_fwd.hpp \
@@ -826,13 +768,27 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/view/iterator_range/detail/segmented_iterator_range.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/push_back.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/as_fusion_element.hpp \
+		../../../../../include/boost-1_59/boost/ref.hpp \
+		../../../../../include/boost-1_59/boost/core/ref.hpp \
+		../../../../../include/boost-1_59/boost/utility/addressof.hpp \
+		../../../../../include/boost-1_59/boost/core/addressof.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/joint_view/joint_view.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/joint_view/joint_view_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/is_view.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/is_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/joint_view/joint_view_iterator.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/size.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/detail/segmented_size.hpp \
+		../../../../../include/boost-1_59/boost/mpl/plus.hpp \
+		../../../../../include/boost-1_59/boost/fusion/mpl/begin.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/mpl/detail/begin_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/adapted/mpl/mpl_iterator.hpp \
 		../../../../../include/boost-1_59/boost/fusion/support/detail/mpl_iterator_category.hpp \
+		../../../../../include/boost-1_59/boost/mpl/begin.hpp \
+		../../../../../include/boost-1_59/boost/fusion/iterator/mpl/fusion_iterator.hpp \
+		../../../../../include/boost-1_59/boost/fusion/mpl/end.hpp \
+		../../../../../include/boost-1_59/boost/fusion/adapted/mpl/detail/end_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/end.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/joint_view/joint_view_iterator.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/joint_view/detail/deref_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/detail/adapt_deref_traits.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/joint_view/detail/next_impl.hpp \
@@ -851,7 +807,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/prior_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/advance_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/distance_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/minus.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/equal_to_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/value_of_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view/detail/at_impl.hpp \
@@ -864,39 +819,210 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/reverse_cons.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/detail/segment_sequence.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/empty.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/mpl/detail/begin_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/begin.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/mpl/fusion_iterator.hpp \
-		../../../../../include/boost-1_59/boost/fusion/mpl/end.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/mpl/detail/end_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/end.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/begin.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/next.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/value_of.hpp \
-		../../../../../include/boost-1_59/boost/mpl/vector.hpp \
-		../../../../../include/boost-1_59/boost/mpl/limits/vector.hpp \
-		../../../../../include/boost-1_59/boost/mpl/contains.hpp \
-		../../../../../include/boost-1_59/boost/mpl/contains_fwd.hpp \
-		../../../../../include/boost-1_59/boost/mpl/aux_/contains_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/find.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/transform.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/transform.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view_iterator.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/deref_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/apply_transform_result.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/next_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/prior_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/value_of_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/advance_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/distance_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/equal_to_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/begin_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/end_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io/out.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/out.hpp \
+		../../../../../include/boost-1_59/boost/optional.hpp \
+		../../../../../include/boost-1_59/boost/optional/optional.hpp \
+		../../../../../include/boost-1_59/boost/core/explicit_operator_bool.hpp \
+		../../../../../include/boost-1_59/boost/core/swap.hpp \
+		../../../../../include/boost-1_59/boost/optional/bad_optional_access.hpp \
+		../../../../../include/boost-1_59/boost/type.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/decay.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/add_pointer.hpp \
+		../../../../../include/boost-1_59/boost/none.hpp \
+		../../../../../include/boost-1_59/boost/none_t.hpp \
+		../../../../../include/boost-1_59/boost/utility/compare_pointees.hpp \
+		../../../../../include/boost-1_59/boost/optional/optional_fwd.hpp \
+		../../../../../include/boost-1_59/boost/spirit/include/qi.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi/action.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi/action/action.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi/meta_compiler.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/meta_compiler.hpp \
+		../../../../../include/boost-1_59/boost/spirit/include/phoenix_limits.hpp \
+		../../../../../include/boost-1_59/boost/phoenix/core/limits.hpp \
+		../../../../../include/boost-1_59/boost/phoenix/version.hpp \
+		../../../../../include/boost-1_59/boost/version.hpp \
+		../../../../../include/boost-1_59/boost/predef.h \
+		../../../../../include/boost-1_59/boost/predef/language.h \
+		../../../../../include/boost-1_59/boost/predef/language/stdc.h \
+		../../../../../include/boost-1_59/boost/predef/version_number.h \
+		../../../../../include/boost-1_59/boost/predef/make.h \
+		../../../../../include/boost-1_59/boost/predef/detail/test.h \
+		../../../../../include/boost-1_59/boost/predef/language/stdcpp.h \
+		../../../../../include/boost-1_59/boost/predef/language/objc.h \
+		../../../../../include/boost-1_59/boost/predef/architecture.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/alpha.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/arm.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/blackfin.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/convex.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/ia64.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/m68k.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/mips.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/parisc.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/ppc.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/pyramid.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/rs6k.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/sparc.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/superh.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/sys370.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/sys390.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/x86.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/x86/32.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/x86/64.h \
+		../../../../../include/boost-1_59/boost/predef/architecture/z.h \
+		../../../../../include/boost-1_59/boost/predef/compiler.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/borland.h \
+		../../../../../include/boost-1_59/boost/predef/detail/comp_detected.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/clang.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/comeau.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/compaq.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/diab.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/digitalmars.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/dignus.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/edg.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/ekopath.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/gcc_xml.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/gcc.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/greenhills.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/hp_acc.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/iar.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/ibm.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/intel.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/kai.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/llvm.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/metaware.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/metrowerks.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/microtec.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/mpw.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/palm.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/pgi.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/sgi_mipspro.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/sunpro.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/tendra.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/visualc.h \
+		../../../../../include/boost-1_59/boost/predef/compiler/watcom.h \
+		../../../../../include/boost-1_59/boost/predef/library.h \
+		../../../../../include/boost-1_59/boost/predef/library/c.h \
+		../../../../../include/boost-1_59/boost/predef/library/c/_prefix.h \
+		../../../../../include/boost-1_59/boost/predef/detail/_cassert.h \
+		../../../../../include/boost-1_59/boost/predef/library/c/gnu.h \
+		../../../../../include/boost-1_59/boost/predef/library/c/uc.h \
+		../../../../../include/boost-1_59/boost/predef/library/c/vms.h \
+		../../../../../include/boost-1_59/boost/predef/library/c/zos.h \
+		../../../../../include/boost-1_59/boost/predef/library/std.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/_prefix.h \
+		../../../../../include/boost-1_59/boost/predef/detail/_exception.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/cxx.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/dinkumware.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/libcomo.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/modena.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/msl.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/roguewave.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/sgi.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/stdcpp3.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/stlport.h \
+		../../../../../include/boost-1_59/boost/predef/library/std/vacpp.h \
+		../../../../../include/boost-1_59/boost/predef/os.h \
+		../../../../../include/boost-1_59/boost/predef/os/aix.h \
+		../../../../../include/boost-1_59/boost/predef/detail/os_detected.h \
+		../../../../../include/boost-1_59/boost/predef/os/amigaos.h \
+		../../../../../include/boost-1_59/boost/predef/os/android.h \
+		../../../../../include/boost-1_59/boost/predef/os/beos.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd.h \
+		../../../../../include/boost-1_59/boost/predef/os/macos.h \
+		../../../../../include/boost-1_59/boost/predef/os/ios.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd/bsdi.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd/dragonfly.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd/free.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd/open.h \
+		../../../../../include/boost-1_59/boost/predef/os/bsd/net.h \
+		../../../../../include/boost-1_59/boost/predef/os/cygwin.h \
+		../../../../../include/boost-1_59/boost/predef/os/haiku.h \
+		../../../../../include/boost-1_59/boost/predef/os/hpux.h \
+		../../../../../include/boost-1_59/boost/predef/os/irix.h \
+		../../../../../include/boost-1_59/boost/predef/os/linux.h \
+		../../../../../include/boost-1_59/boost/predef/os/os400.h \
+		../../../../../include/boost-1_59/boost/predef/os/qnxnto.h \
+		../../../../../include/boost-1_59/boost/predef/os/solaris.h \
+		../../../../../include/boost-1_59/boost/predef/os/unix.h \
+		../../../../../include/boost-1_59/boost/predef/os/vms.h \
+		../../../../../include/boost-1_59/boost/predef/os/windows.h \
+		../../../../../include/boost-1_59/boost/predef/other.h \
+		../../../../../include/boost-1_59/boost/predef/other/endian.h \
+		../../../../../include/boost-1_59/boost/predef/platform.h \
+		../../../../../include/boost-1_59/boost/predef/platform/mingw.h \
+		../../../../../include/boost-1_59/boost/predef/detail/platform_detected.h \
+		../../../../../include/boost-1_59/boost/predef/platform/windows_desktop.h \
+		../../../../../include/boost-1_59/boost/predef/platform/windows_store.h \
+		../../../../../include/boost-1_59/boost/predef/platform/windows_phone.h \
+		../../../../../include/boost-1_59/boost/predef/platform/windows_runtime.h \
+		../../../../../include/boost-1_59/boost/predef/version.h \
+		../../../../../include/boost-1_59/boost/phoenix/support/preprocessor/round.hpp \
+		../../../../../include/boost-1_59/boost/proto/proto_fwd.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing_binary_params.hpp \
+		../../../../../include/boost-1_59/boost/proto/proto.hpp \
+		../../../../../include/boost-1_59/boost/proto/core.hpp \
+		../../../../../include/boost-1_59/boost/proto/args.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/is_noncopyable.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/args.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/args.hpp \
+		../../../../../include/boost-1_59/boost/proto/tags.hpp \
+		../../../../../include/boost-1_59/boost/proto/eval.hpp \
+		../../../../../include/boost-1_59/boost/proto/expr.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/selection/max.hpp \
+		../../../../../include/boost-1_59/boost/proto/traits.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/template_arity.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/template_arity_helper.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/template_arity_helper.hpp \
+		../../../../../include/boost-1_59/boost/proto/domain.hpp \
+		../../../../../include/boost-1_59/boost/proto/generate.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/generate_by_value.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/generate_by_value.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/as_expr.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/deduce_domain.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/deduce_domain_n.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/deduce_domain_n.hpp \
+		../../../../../include/boost-1_59/boost/proto/transform/pass_through.hpp \
+		../../../../../include/boost-1_59/boost/proto/transform/impl.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/any.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/static_const.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/ignore_unused.hpp \
+		../../../../../include/boost-1_59/boost/proto/transform/detail/pass_through_impl.hpp \
+		../../../../../include/boost-1_59/boost/proto/transform/detail/preprocessed/pass_through_impl.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/traits.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/traits.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/funop.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/funop.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/basic_expr.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/basic_expr.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/expr.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/expr_variadic.hpp \
+		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/expr.hpp \
+		../../../../../include/boost-1_59/boost/proto/repeat.hpp \
+		../../../../../include/boost-1_59/boost/proto/fusion.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/is_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/tag_of_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/category_of.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/iterator_base.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/intrinsic.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/at.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/value_at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/back.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/front.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/has_key.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find_if_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/query/detail/find_if.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/query/detail/segmented_find.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/segmented_fold_until.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/at_key.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/value_at_key.hpp \
+		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/swap.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/zip_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/support/unused.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/detail/strictest_traversal.hpp \
 		../../../../../include/boost-1_59/boost/fusion/mpl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/iterator/mpl.hpp \
@@ -1032,15 +1158,8 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/mpl/erase_key_fwd.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/erase_key_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/erase_key.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find_if_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/query/detail/find_if.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/query/detail/segmented_find.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/segmented_fold_until.hpp \
 		../../../../../include/boost-1_59/boost/fusion/mpl/front.hpp \
 		../../../../../include/boost-1_59/boost/fusion/mpl/has_key.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/has_key.hpp \
 		../../../../../include/boost-1_59/boost/fusion/mpl/insert.hpp \
 		../../../../../include/boost-1_59/boost/mpl/insert.hpp \
 		../../../../../include/boost-1_59/boost/mpl/insert_fwd.hpp \
@@ -1073,24 +1192,33 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/fold.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/segmented_fold.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/filter_if.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/filter_if.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/filter_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/filter_view_iterator.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/deref_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/next_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/value_of_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/equal_to_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/deref_data_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/key_of_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/begin_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/end_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/size_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/as_vector.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/convert.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/as_vector.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/as_vector.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/begin_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/transform.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view_iterator.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/deref_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/apply_transform_result.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/next_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/prior_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/value_of_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/advance_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/distance_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/equal_to_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/transform_view_fwd.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/begin_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/end_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/transform_view/detail/value_at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/end_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/min.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/size_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/at_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/vector20.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/vector30.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/vector40.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/vector50.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/vector.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/vector.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/vector_n_chooser.hpp \
@@ -1107,6 +1235,9 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/vvector40.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/vvector50.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/vector_forward_ctor.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/convert.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/as_vector.hpp \
+		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/as_vector.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/as_vector.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/as_vector10.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/as_vector20.hpp \
@@ -1114,217 +1245,22 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/as_vector40.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/cpp03/preprocessed/as_vector50.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/vector/detail/convert_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/push_front.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/pop_front.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/is_sequence.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/for_each.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/for_each.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/for_each.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp \
-		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/for_each_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/is_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/mpl.hpp \
-		../../../../../include/boost-1_59/boost/foreach.hpp \
-		../../../../../include/boost-1_59/boost/foreach_fwd.hpp \
-		../../../../../include/boost-1_59/boost/utility/value_init.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/cv_traits.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/add_cv.hpp \
-		../../../../../include/boost-1_59/boost/type_traits/remove_volatile.hpp \
-		../../../../../include/boost-1_59/boost/swap.hpp \
-		../../../../../include/boost-1_59/boost/proto/proto_fwd.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing_binary_params.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi/domain.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/support/meta_compiler.hpp \
-		../../../../../include/boost-1_59/boost/spirit/include/phoenix_limits.hpp \
-		../../../../../include/boost-1_59/boost/phoenix/core/limits.hpp \
-		../../../../../include/boost-1_59/boost/phoenix/version.hpp \
-		../../../../../include/boost-1_59/boost/version.hpp \
-		../../../../../include/boost-1_59/boost/predef.h \
-		../../../../../include/boost-1_59/boost/predef/language.h \
-		../../../../../include/boost-1_59/boost/predef/language/stdc.h \
-		../../../../../include/boost-1_59/boost/predef/version_number.h \
-		../../../../../include/boost-1_59/boost/predef/make.h \
-		../../../../../include/boost-1_59/boost/predef/detail/test.h \
-		../../../../../include/boost-1_59/boost/predef/language/stdcpp.h \
-		../../../../../include/boost-1_59/boost/predef/language/objc.h \
-		../../../../../include/boost-1_59/boost/predef/architecture.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/alpha.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/arm.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/blackfin.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/convex.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/ia64.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/m68k.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/mips.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/parisc.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/ppc.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/pyramid.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/rs6k.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/sparc.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/superh.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/sys370.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/sys390.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/x86.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/x86/32.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/x86/64.h \
-		../../../../../include/boost-1_59/boost/predef/architecture/z.h \
-		../../../../../include/boost-1_59/boost/predef/compiler.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/borland.h \
-		../../../../../include/boost-1_59/boost/predef/detail/comp_detected.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/clang.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/comeau.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/compaq.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/diab.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/digitalmars.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/dignus.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/edg.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/ekopath.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/gcc_xml.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/gcc.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/greenhills.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/hp_acc.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/iar.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/ibm.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/intel.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/kai.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/llvm.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/metaware.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/metrowerks.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/microtec.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/mpw.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/palm.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/pgi.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/sgi_mipspro.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/sunpro.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/tendra.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/visualc.h \
-		../../../../../include/boost-1_59/boost/predef/compiler/watcom.h \
-		../../../../../include/boost-1_59/boost/predef/library.h \
-		../../../../../include/boost-1_59/boost/predef/library/c.h \
-		../../../../../include/boost-1_59/boost/predef/library/c/_prefix.h \
-		../../../../../include/boost-1_59/boost/predef/detail/_cassert.h \
-		../../../../../include/boost-1_59/boost/predef/library/c/gnu.h \
-		../../../../../include/boost-1_59/boost/predef/library/c/uc.h \
-		../../../../../include/boost-1_59/boost/predef/library/c/vms.h \
-		../../../../../include/boost-1_59/boost/predef/library/c/zos.h \
-		../../../../../include/boost-1_59/boost/predef/library/std.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/_prefix.h \
-		../../../../../include/boost-1_59/boost/predef/detail/_exception.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/cxx.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/dinkumware.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/libcomo.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/modena.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/msl.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/roguewave.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/sgi.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/stdcpp3.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/stlport.h \
-		../../../../../include/boost-1_59/boost/predef/library/std/vacpp.h \
-		../../../../../include/boost-1_59/boost/predef/os.h \
-		../../../../../include/boost-1_59/boost/predef/os/aix.h \
-		../../../../../include/boost-1_59/boost/predef/detail/os_detected.h \
-		../../../../../include/boost-1_59/boost/predef/os/amigaos.h \
-		../../../../../include/boost-1_59/boost/predef/os/android.h \
-		../../../../../include/boost-1_59/boost/predef/os/beos.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd.h \
-		../../../../../include/boost-1_59/boost/predef/os/macos.h \
-		../../../../../include/boost-1_59/boost/predef/os/ios.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd/bsdi.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd/dragonfly.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd/free.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd/open.h \
-		../../../../../include/boost-1_59/boost/predef/os/bsd/net.h \
-		../../../../../include/boost-1_59/boost/predef/os/cygwin.h \
-		../../../../../include/boost-1_59/boost/predef/os/haiku.h \
-		../../../../../include/boost-1_59/boost/predef/os/hpux.h \
-		../../../../../include/boost-1_59/boost/predef/os/irix.h \
-		../../../../../include/boost-1_59/boost/predef/os/linux.h \
-		../../../../../include/boost-1_59/boost/predef/os/os400.h \
-		../../../../../include/boost-1_59/boost/predef/os/qnxnto.h \
-		../../../../../include/boost-1_59/boost/predef/os/solaris.h \
-		../../../../../include/boost-1_59/boost/predef/os/unix.h \
-		../../../../../include/boost-1_59/boost/predef/os/vms.h \
-		../../../../../include/boost-1_59/boost/predef/os/windows.h \
-		../../../../../include/boost-1_59/boost/predef/other.h \
-		../../../../../include/boost-1_59/boost/predef/other/endian.h \
-		../../../../../include/boost-1_59/boost/predef/platform.h \
-		../../../../../include/boost-1_59/boost/predef/platform/mingw.h \
-		../../../../../include/boost-1_59/boost/predef/detail/platform_detected.h \
-		../../../../../include/boost-1_59/boost/predef/platform/windows_desktop.h \
-		../../../../../include/boost-1_59/boost/predef/platform/windows_store.h \
-		../../../../../include/boost-1_59/boost/predef/platform/windows_phone.h \
-		../../../../../include/boost-1_59/boost/predef/platform/windows_runtime.h \
-		../../../../../include/boost-1_59/boost/predef/version.h \
-		../../../../../include/boost-1_59/boost/phoenix/support/preprocessor/round.hpp \
-		../../../../../include/boost-1_59/boost/proto/proto.hpp \
-		../../../../../include/boost-1_59/boost/proto/core.hpp \
-		../../../../../include/boost-1_59/boost/proto/args.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/is_noncopyable.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/args.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/args.hpp \
-		../../../../../include/boost-1_59/boost/proto/tags.hpp \
-		../../../../../include/boost-1_59/boost/proto/eval.hpp \
-		../../../../../include/boost-1_59/boost/proto/expr.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/selection/max.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repetition/enum_trailing.hpp \
-		../../../../../include/boost-1_59/boost/proto/traits.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/template_arity.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/template_arity_helper.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/template_arity_helper.hpp \
-		../../../../../include/boost-1_59/boost/proto/domain.hpp \
-		../../../../../include/boost-1_59/boost/proto/generate.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/generate_by_value.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/generate_by_value.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/as_expr.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/deduce_domain.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/iteration/local.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/deduce_domain_n.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/deduce_domain_n.hpp \
-		../../../../../include/boost-1_59/boost/proto/transform/pass_through.hpp \
-		../../../../../include/boost-1_59/boost/proto/transform/impl.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/any.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/static_const.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/ignore_unused.hpp \
-		../../../../../include/boost-1_59/boost/proto/transform/detail/pass_through_impl.hpp \
-		../../../../../include/boost-1_59/boost/proto/transform/detail/preprocessed/pass_through_impl.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/traits.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/traits.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/funop.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/funop.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/basic_expr.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/basic_expr.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/expr.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/expr_variadic.hpp \
-		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/expr.hpp \
-		../../../../../include/boost-1_59/boost/proto/repeat.hpp \
-		../../../../../include/boost-1_59/boost/proto/fusion.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/tag_of_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/category_of.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/iterator_base.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/intrinsic.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/back.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/front.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/at_key.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/value_at_key.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/swap.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/zip_view.hpp \
-		../../../../../include/boost-1_59/boost/fusion/support/unused.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/begin_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/zip_view_iterator_fwd.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/end_impl.hpp \
-		../../../../../include/boost-1_59/boost/mpl/min.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/size_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/at_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/vector20.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/vector30.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/vector40.hpp \
-		../../../../../include/boost-1_59/boost/fusion/container/vector/vector50.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/value_at_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/query/find_if.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/query/detail/segmented_find_if.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/remove.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/filter_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/filter_view_iterator.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/deref_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/next_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/value_of_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/equal_to_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/deref_data_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/value_of_data_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/key_of_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/begin_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/end_impl.hpp \
+		../../../../../include/boost-1_59/boost/fusion/view/filter_view/detail/size_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/transform_view.hpp \
 		../../../../../include/boost-1_59/boost/mpl/aux_/transform_iter.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/zip_view/zip_view_iterator.hpp \
@@ -1336,9 +1272,16 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/value_of_impl.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/zip_view/detail/equal_to_impl.hpp \
 		../../../../../include/boost-1_59/boost/mpl/zip_view.hpp \
+		../../../../../include/boost-1_59/boost/mpl/vector.hpp \
+		../../../../../include/boost-1_59/boost/mpl/limits/vector.hpp \
 		../../../../../include/boost-1_59/boost/mpl/unpack_args.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/for_each.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/for_each.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/iteration/for_each_fwd.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/single_view.hpp \
 		../../../../../include/boost-1_59/boost/fusion/view/single_view.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/transform.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/as_list.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/convert.hpp \
 		../../../../../include/boost-1_59/boost/fusion/container/list/detail/build_cons.hpp \
@@ -1348,6 +1291,10 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/proto/make_expr.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/at_c.hpp \
 		../../../../../include/boost-1_59/boost/fusion/sequence/intrinsic/at_c.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/begin.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/next.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/value_of.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/size.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/poly_function.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/poly_function_funop.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/poly_function_funop.hpp \
@@ -1358,7 +1305,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/preprocessor/seq/to_tuple.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/seq/pop_back.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/seq/push_back.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/push_front.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/unpack_expr_.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/unpack_expr_.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/make_expr_.hpp \
@@ -1403,10 +1349,8 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/proto/detail/lambda_matches.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/lambda_matches.hpp \
 		../../../../../include/boost-1_59/boost/proto/extends.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/seq/for_each.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/remove_typename.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/expand.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/detail/is_unary.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/extends_funop_const.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/extends_funop_const.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/extends_funop.hpp \
@@ -1417,6 +1361,8 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/proto/detail/deep_copy.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/deep_copy.hpp \
 		../../../../../include/boost-1_59/boost/proto/debug.hpp \
+		../../../../../include/boost-1_59/boost/detail/sp_typeinfo.hpp \
+		../../../../../include/boost-1_59/boost/core/typeinfo.hpp \
 		../../../../../include/boost-1_59/boost/proto/context.hpp \
 		../../../../../include/boost-1_59/boost/proto/context/null.hpp \
 		../../../../../include/boost-1_59/boost/proto/context/detail/null_eval.hpp \
@@ -1426,34 +1372,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/proto/detail/decltype.hpp \
 		../../../../../include/boost-1_59/boost/get_pointer.hpp \
 		../../../../../include/boost-1_59/boost/config/no_tr1/memory.hpp \
-		../../../../../include/boost-1_59/boost/typeof/typeof.hpp \
-		../../../../../include/boost-1_59/boost/typeof/dmc/typeof_impl.hpp \
-		../../../../../include/boost-1_59/boost/typeof/msvc/typeof_impl.hpp \
-		../../../../../include/boost-1_59/boost/typeof/unsupported.hpp \
-		../../../../../include/boost-1_59/boost/typeof/typeof_impl.hpp \
-		../../../../../include/boost-1_59/boost/typeof/encode_decode.hpp \
-		../../../../../include/boost-1_59/boost/typeof/vector.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/iteration/self.hpp \
-		../../../../../include/boost-1_59/boost/typeof/vector50.hpp \
-		../../../../../include/boost-1_59/boost/typeof/vector100.hpp \
-		../../../../../include/boost-1_59/boost/typeof/vector150.hpp \
-		../../../../../include/boost-1_59/boost/typeof/vector200.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/repeat_from_to.hpp \
-		../../../../../include/boost-1_59/boost/typeof/type_encoding.hpp \
-		../../../../../include/boost-1_59/boost/typeof/template_encoding.hpp \
-		../../../../../include/boost-1_59/boost/typeof/int_encoding.hpp \
-		../../../../../include/boost-1_59/boost/typeof/type_template_param.hpp \
-		../../../../../include/boost-1_59/boost/typeof/integral_template_param.hpp \
-		../../../../../include/boost-1_59/boost/typeof/template_template_param.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/logical/or.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/logical/bitor.hpp \
-		../../../../../include/boost-1_59/boost/typeof/modifiers.hpp \
-		../../../../../include/boost-1_59/boost/typeof/pointers_data_members.hpp \
-		../../../../../include/boost-1_59/boost/typeof/encode_decode_params.hpp \
-		../../../../../include/boost-1_59/boost/typeof/register_functions.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/if.hpp \
-		../../../../../include/boost-1_59/boost/typeof/register_fundamental.hpp \
-		../../../../../include/boost-1_59/boost/typeof/native.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/class_member_traits.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/preprocessed/class_member_traits.hpp \
 		../../../../../include/boost-1_59/boost/proto/detail/memfun_funop.hpp \
@@ -1493,9 +1411,11 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/include/prior.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/pop_back.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/fusion/pop_front.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/pop_front.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/fusion/push_back.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/push_back.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/fusion/push_front.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/push_front.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/fusion/reverse.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/reverse.hpp \
 		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/reverse.hpp \
@@ -1516,11 +1436,80 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/fusion/view/reverse_view/detail/value_at_impl.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/begin.hpp \
+		../../../../../include/boost-1_59/boost/range/begin.hpp \
+		../../../../../include/boost-1_59/boost/range/config.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/begin.hpp \
+		../../../../../include/boost-1_59/boost/range/iterator.hpp \
+		../../../../../include/boost-1_59/boost/range/range_fwd.hpp \
+		../../../../../include/boost-1_59/boost/range/mutable_iterator.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/extract_optional_type.hpp \
+		../../../../../include/boost-1_59/boost/iterator/iterator_traits.hpp \
+		../../../../../include/boost-1_59/boost/detail/iterator.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/msvc_has_iterator_workaround.hpp \
+		../../../../../include/boost-1_59/boost/range/const_iterator.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/common.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/sfinae.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/empty.hpp \
+		../../../../../include/boost-1_59/boost/range/empty.hpp \
+		../../../../../include/boost-1_59/boost/range/end.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/end.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/implementation_help.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/end.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/rbegin.hpp \
+		../../../../../include/boost-1_59/boost/range/rbegin.hpp \
+		../../../../../include/boost-1_59/boost/range/reverse_iterator.hpp \
+		../../../../../include/boost-1_59/boost/iterator/reverse_iterator.hpp \
+		../../../../../include/boost-1_59/boost/next_prior.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/integral_promotion.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_plus.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/detail/has_binary_operator.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/is_fundamental.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/remove_pointer.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_plus_assign.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_minus.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/has_minus_assign.hpp \
+		../../../../../include/boost-1_59/boost/iterator.hpp \
+		../../../../../include/boost-1_59/boost/iterator/iterator_adaptor.hpp \
+		../../../../../include/boost-1_59/boost/iterator/iterator_categories.hpp \
+		../../../../../include/boost-1_59/boost/iterator/detail/config_def.hpp \
+		../../../../../include/boost-1_59/boost/iterator/detail/config_undef.hpp \
+		../../../../../include/boost-1_59/boost/iterator/iterator_facade.hpp \
+		../../../../../include/boost-1_59/boost/iterator/interoperable.hpp \
+		../../../../../include/boost-1_59/boost/iterator/detail/facade_iterator_category.hpp \
+		../../../../../include/boost-1_59/boost/detail/indirect_traits.hpp \
+		../../../../../include/boost-1_59/boost/iterator/detail/enable_if.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/rend.hpp \
+		../../../../../include/boost-1_59/boost/range/rend.hpp \
 		../../../../../include/boost-1_59/boost/proto/functional/range/size.hpp \
+		../../../../../include/boost-1_59/boost/range/size.hpp \
+		../../../../../include/boost-1_59/boost/range/size_type.hpp \
+		../../../../../include/boost-1_59/boost/range/difference_type.hpp \
+		../../../../../include/boost-1_59/boost/range/has_range_iterator.hpp \
+		../../../../../include/boost-1_59/boost/range/concepts.hpp \
+		../../../../../include/boost-1_59/boost/concept_check.hpp \
+		../../../../../include/boost-1_59/boost/concept/assert.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/msvc.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/backward_compatibility.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/has_constraints.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/borland.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/general.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/conversion_traits.hpp \
+		../../../../../include/boost-1_59/boost/concept/usage.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/concept_def.hpp \
+		../../../../../include/boost-1_59/boost/concept/detail/concept_undef.hpp \
+		../../../../../include/boost-1_59/boost/iterator/iterator_concepts.hpp \
+		../../../../../include/boost-1_59/boost/range/value_type.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/misc_concept.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/make_unsigned.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/has_member_size.hpp \
+		../../../../../include/boost-1_59/boost/utility.hpp \
+		../../../../../include/boost-1_59/boost/utility/base_from_member.hpp \
+		../../../../../include/boost-1_59/boost/utility/binary.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/control/deduce_d.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/arithmetic/mod.hpp \
+		../../../../../include/boost-1_59/boost/preprocessor/arithmetic/detail/div_base.hpp \
+		../../../../../include/boost-1_59/boost/utility/identity_type.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/function_traits.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/make_component.hpp \
 		../../../../../include/boost-1_59/boost/spirit/include/phoenix_core.hpp \
 		../../../../../include/boost-1_59/boost/phoenix/core.hpp \
@@ -1532,28 +1521,6 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/phoenix/support/iterate.hpp \
 		../../../../../include/boost-1_59/boost/phoenix/support/detail/iterate_define.hpp \
 		../../../../../include/boost-1_59/boost/preprocessor/seq/for_each_product.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/adapt_struct.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/comparison/equal.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/variadic/to_seq.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/tuple/to_seq.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/extension.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_base.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_auto.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_is_tpl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/adapt_base_attr_filler.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/preprocessor/is_seq.hpp \
-		../../../../../include/boost-1_59/boost/preprocessor/punctuation/paren.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/at_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/is_view_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/is_sequence_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/value_at_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/category_of_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/size_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/begin_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/iterator/basic_iterator.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/end_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/value_of_impl.hpp \
-		../../../../../include/boost-1_59/boost/fusion/adapted/struct/detail/deref_impl.hpp \
 		../../../../../include/boost-1_59/boost/phoenix/support/preprocessed/vector.hpp \
 		../../../../../include/boost-1_59/boost/phoenix/support/preprocessed/vector_10.hpp \
 		../../../../../include/boost-1_59/boost/phoenix/support/preprocessed/vector_20.hpp \
@@ -1632,8 +1599,12 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/spirit/home/support/detail/make_cons.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/cons.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/modify.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/unused.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/assert_msg.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi/domain.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/info.hpp \
+		../../../../../include/boost-1_59/boost/foreach.hpp \
+		../../../../../include/boost-1_59/boost/foreach_fwd.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/utf8.hpp \
 		../../../../../include/boost-1_59/boost/regex/pending/unicode_iterator.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/argument.hpp \
@@ -1641,26 +1612,42 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/spirit/home/support/context.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/nonterminal/expand_arg.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/string_traits.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/karma/domain.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/nonterminal_fwd.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/karma/nonterminal/nonterminal_fwd.hpp \
-		../grammar.h \
-		../../../../../include/boost-1_59/boost/config/warning_disable.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/adapt_struct.hpp \
-		../../../../../include/boost-1_59/boost/fusion/include/io.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io/in.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/in.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/manip.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io/out.hpp \
-		../../../../../include/boost-1_59/boost/fusion/sequence/io/detail/out.hpp \
-		../../../../../include/boost-1_59/boost/spirit/include/qi.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi/action.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi/action/action.hpp \
-		../../../../../include/boost-1_59/boost/spirit/home/qi/meta_compiler.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/container.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/attributes_fwd.hpp \
+		../../../../../include/boost-1_59/boost/variant.hpp \
+		../../../../../include/boost-1_59/boost/variant/get.hpp \
+		../../../../../include/boost-1_59/boost/variant/detail/element_index.hpp \
+		../../../../../include/boost-1_59/boost/variant/visitor_ptr.hpp \
+		../../../../../include/boost-1_59/boost/variant/bad_visit.hpp \
+		../../../../../include/boost-1_59/boost/range/iterator_range.hpp \
+		../../../../../include/boost-1_59/boost/range/iterator_range_core.hpp \
+		../../../../../include/boost-1_59/boost/range/functions.hpp \
+		../../../../../include/boost-1_59/boost/range/distance.hpp \
+		../../../../../include/boost-1_59/boost/range/algorithm/equal.hpp \
+		../../../../../include/boost-1_59/boost/range/detail/safe_bool.hpp \
+		../../../../../include/boost-1_59/boost/range/iterator_range_io.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/parser.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/detail/attributes.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/attributes.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/has_semantic_action.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/detail/hold_any.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/detail/as_variant.hpp \
+		../../../../../include/boost-1_59/boost/mpl/contains.hpp \
+		../../../../../include/boost-1_59/boost/mpl/contains_fwd.hpp \
+		../../../../../include/boost-1_59/boost/mpl/aux_/contains_impl.hpp \
+		../../../../../include/boost-1_59/boost/mpl/find.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/filter_if.hpp \
+		../../../../../include/boost-1_59/boost/fusion/algorithm/transformation/filter_if.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/as_vector.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/is_sequence.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/for_each.hpp \
+		../../../../../include/boost-1_59/boost/fusion/include/mpl.hpp \
+		../../../../../include/boost-1_59/boost/utility/value_init.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/cv_traits.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/add_cv.hpp \
+		../../../../../include/boost-1_59/boost/type_traits/remove_volatile.hpp \
+		../../../../../include/boost-1_59/boost/swap.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/support/utree/utree_traits_fwd.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/action_dispatch.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/handles_container.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/auto.hpp \
@@ -1751,6 +1738,7 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/spirit/home/support/char_set/range.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/char_set/range_run_impl.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/support/char_set/range_functions.hpp \
+		../../../../../include/boost-1_59/boost/integer_traits.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/char/char_class.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/detail/enable_lit.hpp \
 		../../../../../include/boost-1_59/boost/fusion/include/vector.hpp \
@@ -1785,6 +1773,8 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/function/detail/prologue.hpp \
 		../../../../../include/boost-1_59/boost/config/no_tr1/functional.hpp \
 		../../../../../include/boost-1_59/boost/function/function_base.hpp \
+		../../../../../include/boost-1_59/boost/integer.hpp \
+		../../../../../include/boost-1_59/boost/integer_fwd.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/composite_traits.hpp \
 		../../../../../include/boost-1_59/boost/function_equal.hpp \
 		../../../../../include/boost-1_59/boost/function/function_fwd.hpp \
@@ -1836,6 +1826,7 @@ debug/main.o: ../main.cpp ../calculator.h \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/reference.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/detail/parameterized.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/detail/parser_binder.hpp \
+		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/nonterminal_fwd.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/detail/fcall.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/grammar.hpp \
 		../../../../../include/boost-1_59/boost/spirit/home/qi/nonterminal/error_handler.hpp \
@@ -2799,7 +2790,8 @@ debug/vm.o: ../vm.cpp ../vm.h \
 		../../../../../include/boost-1_59/boost/variant/detail/element_index.hpp \
 		../../../../../include/boost-1_59/boost/type_traits/add_pointer.hpp \
 		../../../../../include/boost-1_59/boost/variant/visitor_ptr.hpp \
-		../../../../../include/boost-1_59/boost/variant/bad_visit.hpp
+		../../../../../include/boost-1_59/boost/variant/bad_visit.hpp \
+		../user_function.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\vm.o ..\vm.cpp
 
 debug/vasm.o: ../vasm.cpp ../vasm.h
@@ -4969,6 +4961,9 @@ debug/compiler.o: ../compiler.cpp ../compiler.h \
 		../../../../../include/boost-1_59/boost/detail/basic_pointerbuf.hpp \
 		../user_function.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\compiler.o ..\compiler.cpp
+
+debug/calculator.o: ../calculator.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\calculator.o ..\calculator.cpp
 
 ####### Install
 

@@ -1,3 +1,9 @@
+/**
+  * \file
+  * \author mib383
+  * \brief header file which defines types of abstract syntax tree (ast) for bjCalc
+  */
+
 #ifndef AST_H
 #define AST_H
 
@@ -23,6 +29,12 @@ struct double_with_suffix
     char suffix;
 };
 
+
+/**
+ * @brief operand type
+ *
+ * Variant type for single operand in ast. Recursive wrapper because structs can contain operand fields
+ */
 typedef boost::variant<
     double,
     double_with_suffix,
@@ -38,7 +50,11 @@ typedef boost::variant<
 > operand;
 
 
-
+/**
+ * @brief The variable definition abstraction
+ *
+ * Used for variable definition expressions. name=rhs.
+ */
 struct variable_def
 {
     std::string name;

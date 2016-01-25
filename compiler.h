@@ -12,7 +12,9 @@
 #include "user_function.h"
 #include <sstream>
 
-
+/**
+ * @brief The Compiler class
+ */
 class Compiler
 {
 private:
@@ -59,7 +61,7 @@ public:
     bool operator()(function_call x);
     bool operator()(if_expression x);
     bool operator()(core_function_call x);
-    std::string getVar2def();
+    std::string getVar2def() const;
 };
 
 #endif // COMPILER_H

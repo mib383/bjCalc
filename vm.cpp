@@ -1,15 +1,16 @@
-/*=============================================================================
-    Copyright (c) 2001-2011 Joel de Guzman
-
-    Distributed under the Boost Software License, Version 1.0. (See accompanying
-    file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
-=============================================================================*/
 #include "vm.h"
 #include <cmath>
 #include <boost/assert.hpp>
 #include <iostream>
 #include <cmath>
 
+/**
+ * @brief Vm::execute
+ * @param code
+ * @param pc
+ * @param frame_ptr
+ * @return
+ */
 double Vm::execute(std::vector<boost::variant<vasm::cmd, double, std::string>> const& code,
                    std::vector<boost::variant<vasm::cmd, double, std::string>>::const_iterator pc,
                    std::vector<double>::iterator frame_ptr)

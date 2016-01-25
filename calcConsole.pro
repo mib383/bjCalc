@@ -7,7 +7,8 @@ CONFIG -= qt
 SOURCES += main.cpp \
     vm.cpp \
     vasm.cpp \
-    compiler.cpp
+    compiler.cpp \
+    calculator.cpp
 
 HEADERS += \
     grammar.h \
@@ -20,8 +21,7 @@ HEADERS += \
     ast.h
 
 
-INCLUDEPATH += E:/include/boost-1_59
-LIBS += "-LE:/lib"
+INCLUDEPATH += d:/boost/1_60_0/include/boost-1_60
+LIBS += "-Ld:/boost/1_60_0/lib"
 
-OTHER_FILES += \
-    info_c_bnf.txt
+OTHER_FILES +=
