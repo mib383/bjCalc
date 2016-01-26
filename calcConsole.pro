@@ -25,3 +25,6 @@ INCLUDEPATH += d:/boost/1_60_0/include/boost-1_60
 LIBS += "-Ld:/boost/1_60_0/lib"
 
 OTHER_FILES +=
+
+DISTFILES += \
+    README.md

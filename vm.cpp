@@ -9,7 +9,7 @@
  * @param code
  * @param pc
  * @param frame_ptr
- * @return
+ * @return result of execution
  */
 double Vm::execute(std::vector<boost::variant<vasm::cmd, double, std::string>> const& code,
                    std::vector<boost::variant<vasm::cmd, double, std::string>>::const_iterator pc,
