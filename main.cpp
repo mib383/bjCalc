@@ -17,7 +17,7 @@ using namespace std;
 int main()
 {
     std::cout << "Welcome to bjCalc by mib383 (mib383@gmail.com)" << std::endl
-              << "Type expression to start" << std::endl << std::endl;
+              << "Type expression to start or type \"q\" to exit." << std::endl << std::endl;
 
     Calculator calc;
     double result;
