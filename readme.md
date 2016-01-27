@@ -1,2 +1,0 @@
-# bjCalc
-Super calculator
